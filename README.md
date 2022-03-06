@@ -49,13 +49,13 @@
           - Example (after resizing to 500gb from 300gb, using Solution Steps below, note 74% full)
           ```
           user@ip-xxxx df -hT
-Filesystem      Type      Size  Used Avail Use% Mounted on
-...
-/dev/nvme1n1p1  ext4      7.7G  1.6G  5.7G  22% /
-....
-#btc chainstate stored here, this is setup using wolfmcnalley steps above
-/dev/nvme0n1    ext4      492G  344G  125G  74% /data
-tmpfs           tmpfs     389M     0  389M   0% /run/user/1000
+          Filesystem      Type      Size  Used Avail Use% Mounted on
+          ...
+          /dev/nvme1n1p1  ext4      7.7G  1.6G  5.7G  22% /
+          ....
+          #btc chainstate stored here, this is setup using wolfmcnalley steps above
+          /dev/nvme0n1    ext4      492G  344G  125G  74% /data
+          tmpfs           tmpfs     389M     0  389M   0% /run/user/1000
           ```
         - Solution steps:
           - Expand EBS volume to 500GB: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/requesting-ebs-volume-modifications.html
